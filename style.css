@@ -1,0 +1,687 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 5px 80px 5px 100px;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    vertical-align: bottom;
+    font-weight: bold;
+    position: sticky;
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.navbar__s1 img {
+    width: fit-content;
+    max-width: 180px;
+}
+
+.navbar__s2 {
+    padding: 10px;
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar__s3__btn2 {
+    background-color: black;
+    color: #fff;
+    padding: 5px 15px 5px 15px;
+    border-radius: 30px;
+    border: solid transparent 1px;
+
+}
+
+.navbar__s3__btn1,
+.navbar__s3__icon {
+    margin-top: 6px;
+}
+
+.navbar__s2 p:hover,
+.navbar__s3 p:hover {
+    color: rgb(145, 144, 144);
+    cursor: pointer;
+}
+
+.navbar__s3__btn2:hover {
+    background-color: #ffffff;
+    color: black;
+    border: solid black 1px;
+}
+
+/* Quote */
+.quote {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px #34E0A1;
+
+}
+
+/* menus */
+.menus {
+    margin-top: 30px;
+    justify-content: center;
+    display: flex;
+    margin: 16px;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 35px;
+    cursor: pointer;
+    color: #3b3a3a;
+
+}
+
+.menus p {
+    border-bottom: solid transparent 2px;
+}
+
+.menus p:hover {
+
+    border-bottom: solid rgb(116, 114, 114) 2px;
+    color: rgb(44, 43, 43);
+}
+
+.Search {
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: 500;
+    position: relative;
+    align-items: center;
+}
+
+.Search__bar {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 35px;
+    width: 800px;
+    box-shadow: rgb(207, 207, 207) 0px 1px 5px 1px;
+    gap: 10px;
+}
+
+.Search__bar i {
+    padding: 14px;
+}
+
+.Search__bar input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+}
+
+.Search__bar input:focus {
+    outline: none;
+
+}
+
+.Search__bar p {
+    padding: 12px;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #34E0A1;
+    border-radius: 36px;
+    box-shadow: rgb(207, 207, 207) 0px 1px 5px 1px;
+    cursor: pointer;
+
+}
+
+.Search__bar p:hover {
+    border: none;
+    background-color: #67f2bfd3;
+    color: #000000;
+}
+
+/* img thumbnail */
+.pic {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 80px 10px 80px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.pic__offer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 70%;
+    position: absolute;
+    left: 8%;
+    top: 70%;
+    text-align: left;
+}
+
+.pic__offer__title {
+
+    font-size: 35px;
+    text-shadow: black 0px 0px 10px;
+    width: fit-content;
+}
+
+.pic__offer__decs {
+    font-size: 18px;
+
+}
+
+.pic__offer__btn {
+
+    padding: 12px;
+    font-size: 14px;
+    background-color: #fff;
+    color: black;
+    border-radius: 30px;
+    width: fit-content;
+    margin-top: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+
+/*  Your recent searches */
+.recommended h2,p{
+    margin-left: 10px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.recommended__container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 100%; /* Prevent it from expanding beyond full width */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+.visit-card {
+    flex: 0 0 25%; /* Ensure each item takes up 25% of the container, showing 4 items at a time */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    white-space: normal; /* Allows text to wrap within each item */
+}
+
+.visit-card h3,p{
+    text-align: left;
+}
+
+.visit-card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+
+
+
+.visit-card h3 {
+    margin: 10px 0;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px; /* Custom scrollbar height */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Custom scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Custom scrollbar track color */
+}
+
+
+
+
+
+.vibrant h2,p{
+    margin-left: 10px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.vibrant_container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 100%; /* Prevent it from expanding beyond full width */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+.vibrant_item {
+    flex: 0 0 25%; /* Ensure each item takes up 25% of the container, showing 4 items at a time */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    white-space: normal; /* Allows text to wrap within each item */
+}
+
+.vibrant_item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vibrant_item h3 {
+    margin: 10px 0;
+    text-align: left; /* Align text to the left */
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px; /* Custom scrollbar height */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Custom scrollbar thumb color */
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Custom scrollbar track color */
+}
+
+
+
+
+
+.explore {
+    background-color: #FAF1ED;
+    margin-bottom: 4vw;
+}
+
+.explore_container {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+.explore_data {
+    margin-top: 1vw;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.explore_item {
+    flex-grow: 1;
+    flex-basis: 20%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.explore_item img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.explore_item:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0%);
+}
+
+.explore_item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+
+
+
+.award-winning img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.footer{
+    background-color: #FAF1ED;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.footer1{
+    display: grid;
+    grid-template-columns: 18% 15% 20% 45%;
+    gap: 30px;
+}
+
+.footer2{
+    display:flex;
+    margin-top:50px;
+    gap:3px;
+    align-items: center;
+}
+
+.footer_container1,.footer_container2,.footer_container3,.footer_container4{
+    display: flex;
+    margin: 0 5px;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 1px;
+}
+
+.footer3{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.social_icons{
+    align-self: center;
+    text-align: right;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+.navbar {
+        padding: 5px 20px; /* Adjust padding as needed */
+    }
+
+.navbar__s1 {
+        order: -1; /* Move navbar__s1 to the left */
+    }
+
+.navbar__s3 {
+        order: 1; /* Move navbar__s3 to the right */
+    }
+
+.navbar__s2 {
+        display: none; /* Hide navbar__s2 */
+    }
+    
+
+    
+
+
+/* Quote */
+.quote {
+    margin-top: 30px; /* Adjust margin for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+}
+
+/* Menus */
+.menus p {
+    margin-top: 20px; /* Adjust margin for smaller screens */
+    font-size: 7px; /* Adjust font size for smaller screens */
+}
+
+.Search__bar {
+    padding: 1px; /* Further reduce padding */
+    width: 300px; /* Further reduce width */
+}
+
+.Search__bar p {
+    padding: 6px; /* Further reduce padding */
+    width: 60px; /* Further reduce width */
+    height: 15px; /* Further reduce height */
+    font-size: 10px; /* Further reduce font size */
+}
+
+.Search__bar i {
+    padding: 6px; /* Further reduce padding */
+    font-size: 16px; /* Further reduce font size */
+}
+
+.Search__bar input::placeholder {
+    font-size: 12px; /* Further reduce font size */
+}
+
+
+
+/* Image Thumbnail */
+.pic {
+    margin-top: 30px; /* Adjust margin for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+}
+
+/*-- Your recent searches --*/
+
+    .recommended h2,
+    .recommended p {
+        margin-left: 5px; /* Reduce left margin */
+        font-size: 14px;
+    }
+
+    .scroll-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        width: 100%; /* Ensure the container takes full width */
+    }
+
+    .recommended__container {
+        display: flex;
+        width: 100%; /* Ensure the container takes full width */
+        max-width: 100%; /* Prevent it from expanding beyond full width */
+        flex-wrap: nowrap; /* Prevent wrapping of items */
+        
+    }
+
+    
+
+    .visit-card p {
+        text-align: left; /* Align text to the left */
+        font-size: 8px;
+    }
+
+
+    .visit-card {
+        flex: 0 0 35%; /* Ensure each item takes up 25% of the container, showing 4 items at a time */
+        box-sizing: border-box;
+        padding: 10px;
+        text-align: center;
+        white-space: normal; /* Allows text to wrap within each item */
+    }
+
+
+    .visit-card img {
+        width: 100%;
+        height: 40%;
+        display: block;
+
+    }
+
+    .visit-card h3 {
+        margin: 5px 0; /* Reduce margin */
+        font-size: 10px; /* Reduce font size */
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        height: 6px; /* Reduce scrollbar height */
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+        background: #ccc; /* Custom scrollbar thumb color */
+        border-radius: 3px; /* Reduce border radius */
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Custom scrollbar track color */
+    }
+
+
+    
+
+
+
+    .vibrant h2,
+.vibrant p {
+    margin-left: 5px; /* Reduce left margin */
+    font-size: 12px; /* Adjust font size */
+}
+
+.scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.vibrant_container {
+    display: flex;
+    width: 100%; /* Ensure the container takes full width */
+    max-width: 100%; /* Prevent it from expanding beyond full width */
+    flex-wrap: nowrap; /* Prevent wrapping of items */
+}
+
+.vibrant_item {
+    flex: 0 0 35%; /* Ensure each item takes up 35% of the container */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    white-space: normal; /* Allows text to wrap within each item */
+}
+
+.vibrant_item img {
+    width: 100%;
+    height: 40%;
+    display: block;
+
+}
+
+.vibrant_item h3 {
+    margin: 5px 0; /* Reduce margin */
+    font-size: 10px; /* Reduce font size */
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 6px; /* Reduce scrollbar height */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc; /* Custom scrollbar thumb color */
+    border-radius: 3px; /* Reduce border radius */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Custom scrollbar track color */
+}
+
+
+    .explore_container {
+        width: 90%; /* Reduce width for smaller screens */
+    }
+
+    .explore_data {
+        gap: 20px; /* Reduce the gap between items */
+    }
+
+    .explore_item {
+        flex-basis: 30%; /* Adjust the flex basis */
+    }
+
+    .explore_item img {
+        border-radius: 8px; /* Reduce border radius */
+    }
+
+    .explore_container h2{
+        font-size: 15px;
+    }
+    .explore_item h3 {
+        font-size: 10px; /* Reduce font size */
+    }
+
+
+
+
+
+    .footer {
+        padding: 20px; /* Add padding to the footer */
+    }
+
+    .footer_container1,
+    .footer_container2,
+    .footer_container3,
+    .footer_container4 {
+        width: 100%; /* Make each container full width */
+        margin-bottom: 20px; /* Add margin between containers */
+    }
+
+    .footer1 {
+        display: flex;
+        flex-wrap: wrap; /* Allow containers to wrap */
+        justify-content: space-between; /* Space evenly between containers */
+    }
+
+    .footer_container1 p,
+    .footer_container2 p,
+    .footer_container3 p,
+    .footer_container4 p {
+        font-size: 14px; /* Reduce font size of footer links */
+    }
+
+    .footer2 img {
+        width: 20px; /* Reduce size of Tripadvisor logo */
+    }
+
+    .footer2 p {
+        font-size: 12px; /* Reduce font size of copyright text */
+    }
+
+    .footer3 p {
+        font-size: 12px; /* Reduce font size of regional disclaimer text */
+    }
+
+    .social_icons {
+        font-size: 18px; /* Reduce size of social media icons */
+    }
+
+
+
+}
