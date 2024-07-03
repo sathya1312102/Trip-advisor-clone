@@ -17,6 +17,6 @@ Welcome to the Trip-advisor-clone project! This is a simple and clean clone of t
 * style.css: The CSS file that styles the HTML elements.
 * img/: A folder containing all the image assets used in the project.
 
-Dome link https://sathya1312102.github.io/Trip-advisor-clone/
+Demo link https://sathya1312102.github.io/Trip-advisor-clone/
 
 Thank you for checking out the Trip-advisor-clone project! Happy coding! 😊
